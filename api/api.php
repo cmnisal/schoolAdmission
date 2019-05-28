@@ -5,18 +5,28 @@ include('db.php');
 //http://localhost/admission/Admission.lk/api/api/student/1  =  http://localhost/admission/Admission.lk/api/api.php?sid=1
 //http://localhost/admission/Admission.lk/api/api.php?sid=1&update=true&sex=Male
 
-if (isset($_GET['order_id']) && $_GET['order_id'] != "") {
-	$order_id = $_GET['order_id'];
-	$result = mysqli_query($con, "SELECT * FROM `transactions` WHERE order_id=$order_id");
+if (isset($_GET['user']) && $_GET['pass'] != "") {
+	$user = $_GET['user'];
+	$pass = $_GET['pass'];
+	$result = mysqli_query($con, "SELECT * FROM `userlogin` WHERE username=$user AND pass=$pass");
 	if (mysqli_num_rows($result) > 0) {
-		$row = mysqli_fetch_array($result);
-		$amount = $row['amount'];
-		$response_code = $row['response_code'];
-		$response_desc = $row['response_desc'];
-		response($order_id, $amount, $response_code, $response_desc);
+		response(NULL, NULL, 200, "Login Success");
 		mysqli_close($con);
 	} else {
-		response(NULL, NULL, 200, "No Record Found");
+		response(NULL, NULL, 404, "No Record Found");
+	}
+}else if (isset($_GET['user']) && isset($_GET['nic']) && $_GET['pass'] != "") {
+	$user = $_GET['user'];
+	$pass = $_GET['pass'];
+	$nic = $_GET['nic'];
+	$result = mysqli_query($con, "INSERT INTO `admissionlk`.`userlogin` (`username`, `pass`, `nic`)
+	VALUES
+	  ('$username', '$pass', '$nic');");
+	if (mysqli_num_rows($result) > 0) {
+		response(NULL, NULL, 200, "Login Create Success");
+		mysqli_close($con);
+	} else {
+		response(NULL, NULL, 404, "No Record Found");
 	}
 } else if (checkIsset('sid') && $_GET['update'] != 'true') {
 	$sid = $_GET['sid'];
@@ -182,6 +192,16 @@ if (isset($_GET['order_id']) && $_GET['order_id'] != "") {
 		$response['officer_mark'] = $officer_mark;
 		$response['foreign_mark'] = $foreign_mark;
 		$response['best_cat'] = $best_cat;
+
+		$json_response = json_encode($response);
+		echo $json_response;
+	}
+
+	function loginResponse($order_id, $amount, $response_code, $response_desc)
+	{
+
+		$response['response_code'] = $response_code;
+		$response['response_desc'] = $response_desc;
 
 		$json_response = json_encode($response);
 		echo $json_response;

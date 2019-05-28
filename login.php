@@ -70,7 +70,7 @@ include('./api/db.php');
                 <a href="#" style="color:white">Forgotten Account?</a>
             </div>
 
-            <input type="submit" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">Log In</a>
+            <input type="submit" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">
             <!--<a href="dashboard.php" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">Log In</a>-->
         </form>
 
