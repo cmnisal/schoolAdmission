@@ -1,5 +1,6 @@
 <?php
 include('./api/db.php');
+
 ?>
 <!DOCTYPE html>
 
@@ -7,22 +8,22 @@ include('./api/db.php');
 
 <head>
     <title>Sri Lanka Education Ministry Admission Portal</title>
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-</head> 
+
+</head>
 
 
 <body style="background-color:#eee;">
 
     <div class="container">
-            <h1 class="text-center" style="padding-top:50px;">Eligible Schools</h1>
-            <br>
+        <h1 class="text-center" style="padding-top:50px;">Eligible Schools</h1>
+        <br>
         <div class="row">
 
             <div class="col-4">
@@ -31,8 +32,8 @@ include('./api/db.php');
                         Royal College, Colombo 07
                     </div>
                     <div class="card-body bg-light text-center" style="color:black">
-                        <h1 class="card-title" >
-                           <b>85%</b>
+                        <h1 class="card-title">
+                            <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
                         <button type="button" class="btn btn-success">Accept</button>
@@ -48,12 +49,12 @@ include('./api/db.php');
                     </div>
                     <div class="card-body bg-light text-center" style="color:black">
                         <h1 class="card-title">
-                            <b>90%</b>
+                            <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
                         <button type="button" class="btn btn-success">Accept</button>
                     </div>
-                </div>            
+                </div>
             </div>
 
             <div class="col-4">
@@ -63,17 +64,17 @@ include('./api/db.php');
                     </div>
                     <div class="card-body bg-light text-center" style="color:black">
                         <h1 class="card-title">
-                            <b>65%</b>
+                            <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
                         <button type="button" class="btn btn-success">Accept</button>
                     </div>
-                </div>            
+                </div>
             </div>
 
         </div>
 
-         <div class="row">
+        <div class="row">
 
             <div class="col-4">
                 <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
@@ -81,8 +82,8 @@ include('./api/db.php');
                         Thurstan College, COlombo 07
                     </div>
                     <div class="card-body bg-light text-center" style="color:black">
-                        <h1 class="card-title" >
-                           <b>88%</b>
+                        <h1 class="card-title">
+                            <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
                         <button type="button" class="btn btn-success">Accept</button>
@@ -98,12 +99,12 @@ include('./api/db.php');
                     </div>
                     <div class="card-body bg-light text-center" style="color:black">
                         <h1 class="card-title">
-                            <b>65%</b>
+                            <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
                         <button type="button" class="btn btn-success">Accept</button>
                     </div>
-                </div>            
+                </div>
             </div>
 
             <div class="col-4">
@@ -113,12 +114,12 @@ include('./api/db.php');
                     </div>
                     <div class="card-body bg-light text-center" style="color:black">
                         <h1 class="card-title">
-                            <b>43%</b>
+                            <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
                         <button type="button" class="btn btn-success">Accept</button>
                     </div>
-                </div>            
+                </div>
             </div>
 
         </div>
@@ -126,7 +127,7 @@ include('./api/db.php');
     <hr>
 
     <div class="container">
-            <h1 class="text-center">Apply to other Schools</h1>
+        <h1 class="text-center">Apply to other Schools</h1>
 
 
         <div class="row justify-content-center">
@@ -156,26 +157,25 @@ include('./api/db.php');
                     </div>
                     <div class="card-body bg-light text-center" style="color:black">
                         <h1 class="card-title">
-                            <b>60%</b>
+                            <b><?php echo (rand(40, 68)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
                         <button type="button" class="btn btn-success">Accept</button>
                     </div>
-                </div>            
+                </div>
             </div>
         </div>
 
 
         <div class="row">
-            <div class="col-md-12 text-center" style="padding-bottom:100px"> 
-                <button class="btn btn-success">Return to Dashboard</button> 
+            <div class="col-md-12 text-center" style="padding-bottom:100px">
+                <button class="btn btn-success">Return to Dashboard</button>
             </div>
         </div>
-        
+
     </div>
-    
+
 
 </body>
 
 </html>
-
