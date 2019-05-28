@@ -39,8 +39,11 @@ include('./api/db.php');
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="findschools.php">Find Schools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="scllogin.php">Schools Login</a>
           </li>
         
           <li class="nav-item">

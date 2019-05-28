@@ -11,7 +11,7 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
   $jsonData = getData($domain . $relative);
 
   if ($jsonData['response_code'] === 200) {
-    header('Location: dashboard.php');
+    header('Location: school-dashboard.php');
     $hue = "success";
   } else { }
 }
@@ -74,7 +74,7 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
   <header class="masthead">
     <div class="container d-flex align-items-center" style="height:80%">
       <div class="mx-auto text-center">
-        <h1 class="text-uppercase" style="color: white">Log In</h1>
+        <h1 class="text-uppercase" style="color: white">School Log In</h1>
 
         <form method="post">
           <div class="form-group">
