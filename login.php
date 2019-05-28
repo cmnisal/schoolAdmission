@@ -52,9 +52,6 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <a>
-        <?php var_dump($jsonData);
-        echo $jsonData['response_code'] . $prefix . $domain . $relative ?></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
