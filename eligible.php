@@ -67,7 +67,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" onclick="hidebutton(this.id)" id="ananda"  class="btn btn-success">Apply</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="ananda" class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" onclick="hidebutton(this.id)" id="lumbini"  class="btn btn-success">Apply</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="lumbini" class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ include('./api/db.php');
 
         <div class="row">
             <div class="col-md-12 text-center" style="padding-bottom:100px">
-                <button class="btn btn-success">Return to Dashboard</button>
+                <a href="dashboard.php"><button class="btn btn-success">Return to Dashboard</button></a>
             </div>
         </div>
 
@@ -180,11 +180,18 @@ include('./api/db.php');
 <script type="text/javascript">
     function hidebutton(btn) {
         var x = document.getElementById(btn);
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        console.log(x.className);
+        if (x.className == "btn btn-success") {
+            x.innerHTML = "Applied";
         } else {
-            x.style.display = "none";
+            x.innerHTML = "Apply";
         }
+        x.classList.toggle("btn-danger");
+        // if (x.style.display === "none") {
+        //     x.style.display = "block";
+        // } else {
+        //     x.style.display = "none";
+        // }
     }
 </script>
 
