@@ -1,6 +1,15 @@
 <?php
 include('./api/db.php');
 
+if (isset($_POST['user']) && isset($_POST['pass'])) {
+  $user = $_POST['user'];
+  $pass = $_POST['pass'];
+  $domain = $_SERVER['HTTP_HOST'];
+  $prefix = 'https://';//$_SERVER['HTTPS'] ? 'https://' : 'http://';
+  $relative = "/api/api.php?user=$user&pass=$pass";
+  $jsonData = getData($prefix.$domain.$relative);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +25,7 @@ include('./api/db.php');
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="/img/logo.png"/>
+  <link rel="shortcut icon" type="image/png" href="/img/logo.png" />
 
 
   <!-- Custom fonts for this template -->
@@ -30,7 +39,6 @@ include('./api/db.php');
 </head>
 
 <body id="page-top">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -39,16 +47,18 @@ include('./api/db.php');
         Menu
         <i class="fas fa-bars"></i>
       </button>
+      <a>
+        <?php echo $prefix.$domain.$relative ?></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="findschools.php">Find Schools</a>
           </li>
-        
-          <li class="nav-item">
-              <a href="login.php" class="btn btn-success js-scroll-trigger">Log In</a>
 
-            </li>
+          <li class="nav-item">
+            <a href="login.php" class="btn btn-success js-scroll-trigger">Log In</a>
+
+          </li>
         </ul>
       </div>
     </div>
@@ -60,26 +70,26 @@ include('./api/db.php');
       <div class="mx-auto text-center">
         <h1 class="text-uppercase" style="color: white">Log In</h1>
 
-        <form>
-            <div class="form-group">
-              <input type="text" class="form-control" size="50" name="NIC" placeholder="Enter NIC Number">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" size="50" name="password" placeholder="Password">
-            </div>
-            <div class="form-group">
-                <a href="#" style="color:white">Forgotten Account?</a>
-            </div>
+        <form method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" size="50" name="user" placeholder="Enter NIC Number">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" size="50" name="pass" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <a href="#" style="color:white">Forgotten Account?</a>
+          </div>
 
-            <input type="submit" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">
-            <!--<a href="dashboard.php" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">Log In</a>-->
+          <input type="submit" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">
+          <!--<a href="dashboard.php" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">Log In</a>-->
         </form>
 
       </div>
     </div>
   </header>
 
- 
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
