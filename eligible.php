@@ -141,16 +141,16 @@ include('./api/db.php');
                             <input class="form-control form-control-lg form-control-borderless" id="searchField" type="search" placeholder="Search topics or keywords">
                         </div>
                         <div class="col-auto">
-                            <button class="btn btn-lg btn-success" type="submit">Search</button>
+                            <button class="btn btn-lg btn-success" onclick="searchClick()" type="button">Search</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row" id="search" style="display:none">
 
-            <div id="search" style="display:none" class="col-4">
+            <div class="col-4">
                 <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
                     <div class="card-header text-center">
                         Dudly College, Colombo 05
@@ -194,19 +194,9 @@ include('./api/db.php');
         // }
     }
 
-    var onChange = function(evt) {
-        var s = this.value;
-        if(s.startsWith("d")){
-            console.log("hu");
-            document.getElementById('search').style.display = "block";
-        }else{
-            document.getElementById('search').style.display = "none";
-        }
-    };
-    var input = document.getElementById('searchField');
-    input.addEventListener('input', onChange, false);
-    
-
+    function searchClick(){
+        document.getElementById("search").style.display = "block";
+    }
 </script>
 
 </html>
