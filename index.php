@@ -41,11 +41,11 @@ include('./api/db.php');
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="findschools.html">Find Schools</a>
+            <a class="nav-link js-scroll-trigger" href="findschools.php">Find Schools</a>
           </li>
         
           <li class="nav-item">
-              <a href="login.html" class="btn btn-success js-scroll-trigger">Log In</a>
+              <a href="login.php" class="btn btn-success js-scroll-trigger">Log In</a>
 
             </li>
         </ul>
@@ -59,7 +59,7 @@ include('./api/db.php');
       <div class="mx-auto text-center">
         <h1 class="text-uppercase" style="color: white">Grade 1 Admission</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Create account to start enrolling your child</h2>
-        <a href="register.html" class="btn btn-success js-scroll-trigger">Create Account</a>
+        <a href="register.php" class="btn btn-success js-scroll-trigger">Create Account</a>
       </div>
     </div>
   </header>

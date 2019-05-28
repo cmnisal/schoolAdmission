@@ -28,7 +28,7 @@
                       
                         <div class="card-body text-center">
                             <h3 class="card-title">
-                                    <a href="application-home.html" style="text-decoration: none;color: white;">Create / Open Account</a>
+                                    <a href="application-home.php" style="text-decoration: none;color: white;">Create / Open Account</a>
                             </h3>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                       
                         <div class="card-body text-center">
                             <h3 class="card-title">
-                                <a href="status.html" style="text-decoration: none;color: white;"> School Interviews / Acceptances</a>
+                                <a href="status.php" style="text-decoration: none;color: white;"> School Interviews / Acceptances</a>
                             </h3>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                       
                         <div class="card-body text-center">
                             <h3 class="card-title">
-                                <a href="findschools.html" style="text-decoration: none;color: white;"> Compare Schools</a>
+                                <a href="findschools.php" style="text-decoration: none;color: white;"> Compare Schools</a>
                             </h3>
                         </div>
                     </div>

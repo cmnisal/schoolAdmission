@@ -30,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html" style="color:white"><img src="img/favicon.png"> SRI LANKA EDUCATION MINISTRY <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ADMISSION PORTAL</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.php" style="color:white"><img src="img/logo.png"> SRI LANKA EDUCATION MINISTRY <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ADMISSION PORTAL</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -38,11 +38,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="findschools.html">Find Schools</a>
+            <a class="nav-link js-scroll-trigger" href="findschools.php">Find Schools</a>
           </li>
         
           <li class="nav-item">
-              <a href="login.html" class="btn btn-success js-scroll-trigger">Log In</a>
+              <a href="login.php" class="btn btn-success js-scroll-trigger">Log In</a>
 
             </li>
         </ul>
@@ -54,21 +54,61 @@
   <header class="masthead">
     <div class="container d-flex align-items-center" style="height:80%">
       <div class="mx-auto text-center">
-        <h1 class="text-uppercase" style="color: white">Log In</h1>
+        <h1 class="text-uppercase" style="color: white">Create Account</h1>
 
         <form>
-            <div class="form-group">
-              <input type="text" class="form-control" size="50" name="NIC" placeholder="Enter NIC Number">
+                <div class="form-group">
+            <div class="row">
+                <div class="col">
+                <input type="text" class="form-control" name="first_name" size="25" placeholder="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" name="last_name" size="25" placeholder="Last name">
+              </div>
             </div>
-            <div class="form-group">
-              <input type="password" class="form-control" size="50" name="password" placeholder="Password">
             </div>
+            
             <div class="form-group">
-                <a href="#" style="color:white">Forgotten Account?</a>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" name="NIC" size="25" placeholder="NIC">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" name="phone" size="25" placeholder="Phone Number">
+                </div>
+            </div>
             </div>
 
-            <input type="submit" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">Log In</a>
-            <!--<a href="dashboard.html" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">Log In</a>-->
+            <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <input type="email" class="form-control" name="email" size="25" placeholder="Email">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" name="address" size="25" placeholder="Address">
+                </div>
+            </div>
+            </div>
+
+            <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <input type="password" class="form-control" name="password" size="25" placeholder="Password">
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control" size="25" placeholder="Confirm Password">
+                </div>
+            </div>
+            </div>
+
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
+                <label class="form-check-label" for="exampleCheck1" style="color: white">I Read and Agree to the Regulatory Compliances</label>
+            </div>
+            
+            <button type="submit" class="btn" style="background:#FF7F50;border-radius: 0px; padding-right:100px; padding-left:100px">Submit</button>
+
         </form>
 
       </div>
@@ -85,7 +125,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
-
   <script type="text/javascript">
       $(document).ready(function() {
 

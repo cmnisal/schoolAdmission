@@ -18,7 +18,7 @@
 <body style="background-color:#eee;">
 
     <div class="container">
-        <a href="index.html" style="float: right; color:black;padding-top:10px"><b>Back to Home</b></a> 
+        <a href="index.php" style="float: right; color:black;padding-top:10px"><b>Back to Home</b></a> 
 
         <h1 class="text-center" style="padding-top:50px;">School Comparison</h1>
         <br>

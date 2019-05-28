@@ -38,7 +38,7 @@
           <div class="card text-white bg-primary mb-3" style="height:100px">
             <div class="card-body text-center">
               <h3 class="card-title">
-                <a href="view-applications.html" style="text-decoration: none;color: white;"
+                <a href="view-applications.php" style="text-decoration: none;color: white;"
                   >View Applications</a
                 >
               </h3>
@@ -50,7 +50,7 @@
           <div class="card text-white bg-danger mb-3" style="height:100px">
             <div class="card-body text-center">
               <h3 class="card-title">
-                <a href="analytics.html" style="text-decoration: none;color: white;"
+                <a href="analytics.php" style="text-decoration: none;color: white;"
                   >View Analytics</a
                 >
               </h3>
@@ -64,7 +64,7 @@
           class="col-md-12"
           style="padding-bottom:100px; padding-top:20px;float:right"
         >
-          <a href="index.html" class="btn" style="float:right">Sign Out</a>
+          <a href="index.php" class="btn" style="float:right">Sign Out</a>
         </div>
       </div>
     </div>
