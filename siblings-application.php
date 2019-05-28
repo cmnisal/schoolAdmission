@@ -33,7 +33,7 @@ include('./api/db.php');
 
   <body style="background-color:#eee;">
     <div class="container">
-      <form action="#" method="POST" class="form-horizontal"> 
+      <form action="declaration.php" method="POST" class="form-horizontal"> 
       <h1 style="padding-top:50px;">
         Brothers/ sisters of students studying in the school at present
       </h1>
@@ -285,7 +285,7 @@ include('./api/db.php');
       </div>
     </form>
     </div>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function() {
 
         // EDIT HERE
@@ -320,6 +320,6 @@ include('./api/db.php');
         });
         return o;
       };
-    </script>
+    </script> -->
   </body>
 </html>

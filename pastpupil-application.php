@@ -38,7 +38,7 @@ include('./api/db.php');
       </h1>
       <br />
       <div class="row">
-        <form action="#" method="POST" class="form-horizontal">
+        <form action="declaration.php" method="POST" class="form-horizontal">
         <div style="margin-bottom: 25px" class="input-group">
           <label style="background-color:#28a745; color:white;padding:10px;"
             >Name of School</label
@@ -129,7 +129,7 @@ include('./api/db.php');
         </form>
       </div>
     </div>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function() {
 
         // EDIT HERE
@@ -164,6 +164,6 @@ include('./api/db.php');
         });
         return o;
       };
-    </script>
+    </script> -->
   </body>
 </html>

@@ -49,7 +49,7 @@ include('./api/db.php');
       <br />
 
       <h2>Main document in proof of place of living</h2>
-      <form action="#" method="POST">
+      <form action="declaration.php" method="POST">
       <div class="row">
         <div class="col-6">
           <div style="margin-bottom: 25px" class="input-group">
@@ -149,7 +149,7 @@ include('./api/db.php');
         </div>
       </form>
     </div>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function() {
 
         // EDIT HERE
@@ -184,6 +184,6 @@ include('./api/db.php');
         });
         return o;
       };
-    </script>
+    </script> -->
   </body>
 </html>
