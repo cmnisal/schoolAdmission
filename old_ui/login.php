@@ -32,6 +32,9 @@
 }
 ?>   
 
+<?php
+include('./api/db.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>

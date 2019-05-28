@@ -3,6 +3,9 @@
 
 <!--cat4 = Institution Staff-->
 
+<?php
+include('./api/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

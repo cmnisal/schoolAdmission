@@ -3,6 +3,9 @@
 
 <!--cat2 = children of alumni/past pupils-->
 
+<?php
+include('./api/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

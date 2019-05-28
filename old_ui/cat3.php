@@ -3,6 +3,9 @@
 
 <!--cat3 = siblings/brothers-sisters-->
 
+<?php
+include('./api/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

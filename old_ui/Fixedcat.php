@@ -2,6 +2,9 @@
  ?>
 
 
+<?php
+include('./api/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

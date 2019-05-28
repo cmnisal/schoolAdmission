@@ -3,6 +3,9 @@
 
 <!--cat6 = Foreign Resident-->
 
+<?php
+include('./api/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
