@@ -1004,6 +1004,7 @@ include('./api/db.php');
   $(document).ready(function() {
 
     // EDIT HERE
+    
 
     $('form').submit(function(e) {
       e.preventDefault();

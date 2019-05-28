@@ -6,7 +6,7 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
   $pass = $_POST['pass'];
   $domain = $_SERVER['HTTP_HOST'];
   $prefix = 'https://'; //$_SERVER['HTTPS'] ? 'https://' : 'http://';
-  $relative = "/lakindug/schoolAdmission/api/api.php?user=$user&pass=$pass";
+  $relative = "/api/api.php?user=$user&pass=$pass"; // "/lakindug/schoolAdmission/api/api.php?user=$user&pass=$pass";
   $jsonData = getData($domain . $relative);
 
   if ($jsonData['response_code'] === 200) {
