@@ -6,8 +6,13 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
   $pass = $_POST['pass'];
   $domain = $_SERVER['HTTP_HOST'];
   $prefix = 'https://';//$_SERVER['HTTPS'] ? 'https://' : 'http://';
-  $relative = "/api/api.php?user=$user&pass=$pass";
-  $jsonData = getData($prefix.$domain.$relative);
+  $relative = "/lakindug/schoolAdmission/api/api.php?user=$user&pass=$pass";
+  $jsonData = getData($domain.$relative);
+  
+  if($jsonData['response_code']===200){
+    header('dashboard.php');
+    $hue = "success";
+  }else{}
 }
 
 ?>
@@ -48,7 +53,7 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
         <i class="fas fa-bars"></i>
       </button>
       <a>
-        <?php echo $prefix.$domain.$relative ?></a>
+        <?php var_dump($jsonData);echo $jsonData['response_code'].$prefix.$domain.$relative ?></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
