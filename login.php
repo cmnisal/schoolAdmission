@@ -59,7 +59,7 @@ include('./api/db.php');
       <div class="mx-auto text-center">
         <h1 class="text-uppercase" style="color: white">Log In</h1>
 
-        <form>
+        <form action="dashboard.php">
             <div class="form-group">
               <input type="text" class="form-control" size="50" name="NIC" placeholder="Enter NIC Number">
             </div>
