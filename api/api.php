@@ -8,7 +8,7 @@ include('db.php');
 if (isset($_GET['user']) && $_GET['pass'] != "") {
 	$user = $_GET['user'];
 	$pass = $_GET['pass'];
-	$result = mysqli_query($con, "SELECT * FROM `userlogin` WHERE username=$user AND pass=$pass");
+	$result = mysqli_query($con, "SELECT * FROM `userlogin` WHERE username='$user' AND pass='$pass'");
 	if (mysqli_num_rows($result) > 0) {
 		response(NULL, NULL, 200, "Login Success");
 		mysqli_close($con);
@@ -19,7 +19,7 @@ if (isset($_GET['user']) && $_GET['pass'] != "") {
 	$user = $_GET['user'];
 	$pass = $_GET['pass'];
 	$nic = $_GET['nic'];
-	$result = mysqli_query($con, "INSERT INTO `admissionlk`.`userlogin` (`username`, `pass`, `nic`)
+	$result = mysqli_query($con, "INSERT INTO `admissionlk`.`userlogin` (`$user`, `$pass`, `$nic`)
 	VALUES
 	  ('$username', '$pass', '$nic');");
 	if (mysqli_num_rows($result) > 0) {
