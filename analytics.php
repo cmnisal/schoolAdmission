@@ -18,7 +18,7 @@ include('./api/db.php');
 
 <body style="background-color:#eee;">
   <div class="container">
-    <a href="index.php" style="float: right; color:black;padding-top:10px"><b>Back to Home</b></a>
+    <a href="school-dashboard.php" style="float: right; color:black;padding-top:10px"><b>Back to Dashboard</b></a>
 
     <h1 class="text-center" style="padding-top:50px;">School Analytics</h1>
     <br><br>
