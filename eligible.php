@@ -36,7 +36,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" class="btn btn-success">Accept</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="royal" class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" class="btn btn-success">Accept</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="isipathana" class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" class="btn btn-success">Accept</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="ananda"  class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" class="btn btn-success">Accept</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="thurstan" class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" class="btn btn-success">Accept</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="lumbini"  class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ include('./api/db.php');
                             <b><?php echo (rand(70, 98)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" class="btn btn-success">Accept</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="josheph" class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -160,7 +160,7 @@ include('./api/db.php');
                             <b><?php echo (rand(40, 68)); ?>%</b>
                         </h1>
                         <h4>Probability</h4>
-                        <button type="button" class="btn btn-success">Accept</button>
+                        <button type="button" onclick="hidebutton(this.id)" id="dudly" class="btn btn-success">Apply</button>
                     </div>
                 </div>
             </div>
@@ -177,5 +177,15 @@ include('./api/db.php');
 
 
 </body>
+<script type="text/javascript">
+    function hidebutton(btn) {
+        var x = document.getElementById(btn);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 </html>
