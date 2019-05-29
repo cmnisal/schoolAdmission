@@ -1,5 +1,5 @@
 <?php
-include('./api/db.php');
+// include('./api/db.php');
 ?>
 <!DOCTYPE html>
 
@@ -26,37 +26,37 @@ include('./api/db.php');
         <h4><u>Category</u></h4>
 
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+          <input class="form-check-input" type="radio" name="exampleRadios" onclick="filterFunction('prox')" id="exampleRadios1" value="option1" checked />
           <label class="form-check-label" for="exampleRadios1">
             Proximity
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+          <input class="form-check-input" type="radio" name="exampleRadios" onclick="filterFunction('alum')" id="exampleRadios2" value="option2" />
           <label class="form-check-label" for="exampleRadios2">
             Alumni
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+          <input class="form-check-input" type="radio" name="exampleRadios" onclick="filterFunction('sibl')" id="exampleRadios1" value="option1" checked />
           <label class="form-check-label" for="exampleRadios1">
             Siblings
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+          <input class="form-check-input" type="radio" name="exampleRadios" onclick="filterFunction('for')" id="exampleRadios2" value="option2" />
           <label class="form-check-label" for="exampleRadios2">
             Foreign Resident
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" onclick="filterFunction('staff')" value="option1" checked />
           <label class="form-check-label" for="exampleRadios1">
             Institution Staff
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" onclick="filterFunction('office')"value="option2" />
           <label class="form-check-label" for="exampleRadios2">
             Officer Transfers
           </label>
@@ -211,17 +211,18 @@ include('./api/db.php');
     }
   }
 
-  function filterFunction() {
+  function filterFunction(key) {
     // Declare variables 
     var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
+    input = key;
+    filter = input.toUpperCase();
     table = document.getElementById("myTable");
     tr = table.getElementsByTagName("tr");
 
     // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[0];
+      td = tr[i].getElementsByTagName("td")[1];
+      console.log(td);
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
