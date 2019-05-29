@@ -57,18 +57,18 @@ if (isset($_GET['cat'])) {
     <form action="<?php echo $file;  ?>" class="form-horizontal" method="POST">
       <div style="margin-bottom: 25px" class="input-group">
         <label style="background-color:#28a745; color:white;padding:10px;">Name in full</label>
-        <input type="text" name="full_name" size="30" placeholder="Name" style="margin-bottom:8px;" />
+        <input type="text" name="full_name" value="Kishan Lahiru Goonewardena" size="30" placeholder="Name in Full" style="margin-bottom:8px;" />
       </div>
 
       <div style="margin-bottom: 25px" class="input-group">
         <label style="background-color:#28a745; color:white;padding:10px;">Name with initials</label>
-        <input type="text" name="init_name" value = "Name" size="30" placeholder="Name with initials" style="margin-bottom:8px;" />
+        <input type="text" name="init_name" value = "K. L. Goonewardena" size="30" placeholder="Name with initials" style="margin-bottom:8px;" />
       </div>
 
       <div style="margin-bottom: 25px" class="input-group">
         <label style="background-color:#28a745; color:white;padding:10px;">Sex</label>&nbsp;
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="sex" id="sex_male" value="male" />
+          <input class="form-check-input" type="radio" name="sex" id="sex_male" value="male" checked />
           <label class="form-check-label" for="sex_male">Male</label>
         </div>
         <div class="form-check form-check-inline">
@@ -79,13 +79,13 @@ if (isset($_GET['cat'])) {
 
       <div style="margin-bottom: 25px" class="input-group">
         <label style="background-color:#28a745; color:white;padding:10px;">Religion</label>
-        <input type="text" name="religion" size="30" placeholder="Religion" style="margin-bottom:8px;" />
+        <input type="text" name="religion" size="30" placeholder="Religion" value="Buddhist" style="margin-bottom:8px;" />
       </div>
 
       <div style="margin-bottom: 25px" class="input-group">
         <label style="background-color:#28a745; color:white;padding:10px;">Medium of learning</label>&nbsp;
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="medium" id="sinhala" value="sinhala" />
+          <input class="form-check-input" type="radio" name="medium" id="sinhala" value="sinhala" checked />
           <label class="form-check-label" for="sinhala">Sinhala</label>
         </div>
         <div class="form-check form-check-inline">
@@ -96,7 +96,7 @@ if (isset($_GET['cat'])) {
 
       <div style="margin-bottom: 25px" class="input-group">
         <label style="background-color:#28a745; color:white;padding:10px;">Date of birth</label>
-        <input type="text" size="30" name="date_of_birth" placeholder="dd / mm/ yyyy" style="margin-bottom:8px;" />
+        <input type="text" size="30" name="date_of_birth" placeholder="dd / mm/ yyyy" value="05/03/2013" style="margin-bottom:8px;" />
       </div>
 
       <div style="margin-bottom: 25px" class="input-group">
@@ -109,7 +109,7 @@ if (isset($_GET['cat'])) {
             <option>3</option>
             <option>4</option>
             <option>5</option>
-            <option>6</option>
+            <option selected>6</option>
             <option>7</option>
             <option>8</option>
             <option>9</option>
@@ -122,7 +122,7 @@ if (isset($_GET['cat'])) {
           <select id="months" name="months" class="form-control">
             <option disabled selected>Choose...</option>
             <option>1</option>
-            <option>2</option>
+            <option selected>2</option>
             <option>3</option>
             <option>4</option>
             <option>5</option>
@@ -162,7 +162,7 @@ if (isset($_GET['cat'])) {
             <option>21</option>
             <option>22</option>
             <option>23</option>
-            <option>24</option>
+            <option selected>24</option>
             <option>25</option>
             <option>26</option>
             <option>27</option>
@@ -182,18 +182,18 @@ if (isset($_GET['cat'])) {
           <h2>Applicant</h2>
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Name in full</label>
-            <input type="text" name="guardian_full_name" size="30" placeholder="Name in full" style="margin-bottom:8px;" />
+            <input type="text" name="guardian_full_name" size="30" placeholder="Name in full" value="Asoka Parakrama Goonewardena" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Name with initials</label>
-            <input type="text" name="guardian_init_name" size="30" placeholder="Name with initials" style="margin-bottom:8px;" />
+            <input type="text" name="guardian_init_name" size="30" placeholder="Name with initials" value="A.P. Goonewardena" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Type of applicant</label>&nbsp;
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="guardian_type" id="father" value="father" />
+              <input class="form-check-input" type="radio" name="guardian_type" id="father" value="father" checked />
               <label class="form-check-label" for="father">Father</label>
             </div>
             <div class="form-check form-check-inline">
@@ -209,13 +209,13 @@ if (isset($_GET['cat'])) {
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">NIC</label>
-            <input type="text" name="NIC" size="30" placeholder="NIC" style="margin-bottom:8px;" />
+            <input type="text" name="NIC" size="30" placeholder="NIC" value="890670450V" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Are you a Sri Lankan</label>&nbsp;
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="srilankan" id="yes" value="yes" />
+              <input class="form-check-input" type="radio" name="srilankan" id="yes" value="yes" checked />
               <label class="form-check-label" for="yes">Yes</label>
             </div>
             <div class="form-check form-check-inline">
@@ -226,33 +226,33 @@ if (isset($_GET['cat'])) {
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Religion</label>
-            <input type="text" name="guardian_religion" size="30" placeholder="Religion" style="margin-bottom:8px;" />
+            <input type="text" name="guardian_religion" size="30" placeholder="Religion" value="Buddhist" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Address</label>
-            <input type="text" name="guardian_address" size="30" placeholder="Address" style="margin-bottom:8px;" />
+            <input type="text" name="guardian_address" size="30" placeholder="Address" value="655/3, Elvitigala Mw, Colombo 05" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Telephone</label>
-            <input type="text" name="guardian_tel" size="30" placeholder="Telephone" style="margin-bottom:8px;" />
+            <input type="text" name="guardian_tel" size="30" placeholder="Telephone" value="0773214668" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Residential District</label>
-            <input type="text" name="guardian_district" size="30" placeholder="District" style="margin-bottom:8px;" />
+            <input type="text" name="guardian_district" size="30" placeholder="District" value="Narahenpita" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Divisional Secretariat relevant to the place of living</label>
-            <textarea cols="46" name="divisional_secretariat" placeholder="Required Field"></textarea>
+            <textarea cols="46" name="divisional_secretariat" placeholder="Required Field" value="Narahenpita"><?php echo htmlspecialchars("Narahenpita"); ?></textarea>
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Grama Niladhari Division and number relevant to the place of
               living</label>
-            <textarea cols="60" name="grama_division" placeholder="Required Field"></textarea>
+            <textarea cols="60" name="grama_division" placeholder="Required Field" value="005002"><?php echo htmlspecialchars("005002"); ?></textarea>
           </div>
         </div>
 
@@ -348,111 +348,111 @@ if (isset($_GET['cat'])) {
         <div class="col-4" style="border: 1px solid black; padding:10px">
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Year</label>
-            <input type="text" name="electoral_1_year" placeholder="2017" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_1_year" placeholder="2017" value="2018" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Electoral District</label>
-            <input type="text" name="electoral_1_district" placeholder="Narahenpita" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_1_district" placeholder="Narahenpita" Value="Narahenpita" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Grama Niladhari Div and No</label>
-            <input type="text" name="electoral_1_grama_div" placeholder="005002" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_1_grama_div" placeholder="005002" value="005002" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Polling Division:</label>
-            <input type="text" name="electoral_1_poll" placeholder="098788" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_1_poll" placeholder="098788" value="098788" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Household No</label>
-            <input type="text" name="electoral_1_household" placeholder="655/3" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_1_household" placeholder="655/3" value="655/3" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Serial No</label>
-            <input type="text" name="electoral_1_serial" placeholder="M1254564" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_1_serial" placeholder="M1254564" value="M1234654" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Name of Electors (All persons)</label>
-            <textarea cols="60" name="electoral_1_name" placeholder=""></textarea>
+            <textarea cols="60" name="electoral_1_name" placeholder=""><?php echo htmlspecialchars("Asoka Goonewardena\nKanthi Goonewardena"); ?></textarea>
           </div>
         </div>
 
         <div class="col-4" style="border: 1px solid black; padding:10px">
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Year</label>
-            <input type="text" name="electoral_2_year" placeholder="2017" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_2_year" placeholder="2017" value="2017" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Electoral District</label>
-            <input type="text" name="electoral_2_district" placeholder="Narahenpita" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_2_district" placeholder="Narahenpita" value="Narahenpita" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Grama Niladhari Div and No</label>
-            <input type="text" name="electoral_2_grama_div" placeholder="005002" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_2_grama_div" placeholder="005002" value="005002" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Polling Division:</label>
-            <input type="text" name="electoral_2_poll" placeholder="098788" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_2_poll" placeholder="098788" value="098788" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Household No</label>
-            <input type="text" name="electoral_2_household" placeholder="655/3" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_2_household" placeholder="655/3" value="655/3" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Serial No</label>
-            <input type="text" name="electoral_2_serial" placeholder="M1254564" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_2_serial" placeholder="M1254564" value="M1254564" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Name of Electors (All persons)</label>
-            <textarea cols="60" name="electoral_2_name" placeholder=""></textarea>
+            <textarea cols="60" name="electoral_2_name" placeholder=""><?php echo htmlspecialchars("Asoka Goonewardena\nKanthi Goonewardena"); ?></textarea>
           </div>
         </div>
 
         <div class="col-4" style="border: 1px solid black; padding:10px">
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Year</label>
-            <input type="text" name="electoral_3_year" placeholder="2017" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_3_year" placeholder="2017" value="2016" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Electoral District</label>
-            <input type="text" name="electoral_3_district" placeholder="Narahenpita" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_3_district" placeholder="Narahenpita" value="Narahenpita" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Grama Niladhari Div and No</label>
-            <input type="text" name="electoral_3_grama_div" placeholder="005002" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_3_grama_div" placeholder="005002" value="005002" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Polling Division:</label>
-            <input type="text" name="electoral_3_poll" placeholder="098788" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_3_poll" placeholder="098788" value="098788" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Household No</label>
-            <input type="text" name=electoral_3_household"" placeholder="655/3" style="margin-bottom:8px;" />
+            <input type="text" name=electoral_3_household"" placeholder="655/3" value="655/3" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Serial No</label>
-            <input type="text" name="electoral_3_serial" placeholder="M1254564" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_3_serial" placeholder="M1254564" value="M1234654" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Name of Electors (All persons)</label>
-            <textarea cols="60" name="electoral_3_name" placeholder=""></textarea>
+            <textarea cols="60" name="electoral_3_name" placeholder=""><?php echo htmlspecialchars("Asoka Goonewardena\nKanthi Goonewardena"); ?></textarea>
           </div>
         </div>
       </div>
@@ -461,74 +461,74 @@ if (isset($_GET['cat'])) {
         <div class="col-4" style="border: 1px solid black; padding:10px">
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Year</label>
-            <input type="text" name="electoral_4_year" placeholder="2017" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_4_year" placeholder="2017" value="2015" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Electoral District</label>
-            <input type="text" name="electoral_4_district" placeholder="Narahenpita" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_4_district" placeholder="Narahenpita" value="Narahenpita" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Grama Niladhari Div and No</label>
-            <input type="text" name="electoral_4_grama_div" placeholder="005002" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_4_grama_div" placeholder="005002" value="005002" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Polling Division:</label>
-            <input type="text" name="electoral_4_poll" placeholder="098788" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_4_poll" placeholder="098788" value="098788" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Household No</label>
-            <input type="text" name="electoral_4_household" placeholder="655/3" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_4_household" placeholder="655/3" value="655/3" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Serial No</label>
-            <input type="text" name="electoral_4_serial" placeholder="M1254564" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_4_serial" placeholder="M1254564" value="M1234654" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Name of Electors (All persons)</label>
-            <textarea cols="60" name="electoral_4_name" placeholder=""></textarea>
+            <textarea cols="60" name="electoral_4_name" placeholder=""><?php echo htmlspecialchars("Asoka Goonewardena\nKanthi Goonewardena"); ?></textarea>
           </div>
         </div>
 
         <div class="col-4" style="border: 1px solid black; padding:10px">
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Year</label>
-            <input type="text" name="electoral_5_year" placeholder="2017" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_5_year" placeholder="2017" value="2014" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Electoral District</label>
-            <input type="text" name="electoral_5_district" placeholder="Narahenpita" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_5_district" placeholder="Narahenpita" value="Narahenpita" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Grama Niladhari Div and No</label>
-            <input type="text" name="electoral_5_grama_div" placeholder="005002" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_5_grama_div" placeholder="005002" value="005002" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Polling Division:</label>
-            <input type="text" name="electoral_5_poll" placeholder="098788" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_5_poll" placeholder="098788" value="098788" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Household No</label>
-            <input type="text" name="electoral_5_household" placeholder="655/3" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_5_household" placeholder="655/3" value="655/3" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Serial No</label>
-            <input type="text" name="electoral_5_serial" size="32" placeholder="M1254564" style="margin-bottom:8px;" />
+            <input type="text" name="electoral_5_serial" size="32" placeholder="M1254564" value="M1234654" style="margin-bottom:8px;" />
           </div>
 
           <div style="margin-bottom: 25px" class="input-group">
             <label style="background-color:#28a745; color:white;padding:10px;">Name of Electors (All persons)</label>
-            <textarea cols="60" name="electoral_5_name" placeholder=""></textarea>
+            <textarea cols="60" name="electoral_5_name" placeholder=""><?php echo htmlspecialchars("Asoka Goonewardena\nKanthi Goonewardena"); ?></textarea>
           </div>
         </div>
       </div>
