@@ -104,8 +104,8 @@ include('./api/db.php');
                     <td>Royal College, Colombo 07</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" id="accepted" class="btn btn-success">Accept</button>
-                            <button type="button" id="rejected" class="btn btn-danger">Reject</button>
+                            <button type="button" id="accepted" class="btn btn-success btn-accepted">Accept</button>
+                            <button type="button" id="rejected" class="btn btn-danger btn-rejected">Reject</button>
                         </div>
                     </td>
                 </tr>
@@ -114,8 +114,8 @@ include('./api/db.php');
                     <td>Isipathana College, Colombo</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-success">Accept</button>
-                            <button type="button" class="btn btn-danger">Reject</button>
+                            <button type="button" class="btn btn-success btn-accepted">Accept</button>
+                            <button type="button" class="btn btn-danger btn-rejected">Reject</button>
                         </div>
                     </td>
                 </tr>
@@ -126,19 +126,74 @@ include('./api/db.php');
 
     </div>
 
-    <script>
-        $('.btn-success').on('click', function() {
-            var lastObj = $(this);
-            var parent = lastObj.parent().parent().parent();
-            $(parent).css("background-color", "#98E6AB");
-        });
+<script>
 
-        $('.btn-danger').on('click', function(e) {
-            var lastObj = $(this);
-            var parent = lastObj.parent().parent().parent();
-            $(parent).css("background-color", "#F0A8AF");
-        });
-    </script>
+var acceptF = true;
+var rejectF = true;
+var adacpt = true;
+var adrjct = true;
+    
+$('.btn-success').on('click',function(){
+    var lastObj = $(this); 
+    var nextObj = lastObj.next();    
+    var parent = lastObj.parent();          
+	//$(parent).css("background-color","#98E6AB");
+    if(acceptF){
+        $(nextObj).hide();
+        $(parent).css("width","100%");
+    }
+    else{
+        $(nextObj).show();
+    }
+
+    acceptF = !acceptF;
+    
+});
+
+$('.btn-danger').on('click',function(e){
+    var lastObj = $(this);
+    var preObj = lastObj.prev();    
+    var parent = lastObj.parent();
+	//$(parent).css("background-color","#F0A8AF");
+    if(rejectF){
+        $(preObj).hide();
+        $(parent).css("width","100%");
+    }
+    else{
+        $(preObj).show();
+    }
+
+    rejectF = !rejectF;
+    	
+});
+
+// $('.btn-accepted').on('click',function(){
+//     var lastObj = $(this); 
+//     var nextObj = lastObj.next();    
+//     var parent = lastObj.parent().parent().parent();
+//     var acptbtn = parent.next().find('.btn-accepted');
+//     var length = $('.btn-accepted').closest('tr').length;
+//     console.log(length);          
+// 	//$(parent).css("background-color","#98E6AB");
+//     if(adacpt){
+//         $(nextObj).hide();
+//         $(parent).css("width","100%");
+//         for(var i = 1;i<length;i++){
+
+//         }
+//         $(acptbtn).hide();
+//         $(acptbtn.next()).css("width","100%");
+//     }
+//     else{
+//         $(nextObj).show();
+//     }
+
+//     adacpt = !adacpt;
+    
+// });
+
+</script>   
+    
 
 
 </body>
