@@ -87,8 +87,8 @@ include('./api/db.php');
               <th scope="row">
                 <input type="checkbox" checked /> Asoka Goonawardana
               </th>
-              <td>655/3, Elvitigala Mw. Col-05</td>
-              <td>Proximity/Alumni</td>
+              <td>33A, Polgoda Mw, Nugegoda</td>
+              <td>Alumni</td>
               <td>85%</td>
               <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal">Interview</button></td>
             </tr>
