@@ -14,7 +14,7 @@ include('./api/db.php');
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="/img/logo.png"/>
+  <link rel="shortcut icon" type="image/png" href="/img/logo.png" />
 
 
   <!-- Custom fonts for this template -->
@@ -26,21 +26,6 @@ include('./api/db.php');
   <link href="css/grayscale.min.css" rel="stylesheet">
 
 </head>
-<script>
-    (function() {
-        var div = document.createElement("div");
-        document.getElementsByTagName('body')[0].appendChild(div);
-        div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' src='https://webchat.botframework.com/embed/admissionlk-bot?s=1OUMRVAAM1Q._ppQD7RYgNLg1XcByl9io9lc46sHOfwvh01U5J_O-Qo'></iframe></div>";
-
-        document.querySelector('body').addEventListener('click', function(e) {
-            e.target.matches = e.target.matches || e.target.msMatchesSelector;
-            if (e.target.matches('#botTitleBar')) {
-                var botDiv = document.querySelector('#botDiv');
-                botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
-            };
-        });
-    }());
-</script>
 
 
 <body id="page-top">
@@ -55,17 +40,17 @@ include('./api/db.php');
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="findschools.php">Find Schools</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="scllogin.php">Schools Login</a>
           </li>
-        
-          <li class="nav-item">
-              <a href="login.php" class="btn btn-success js-scroll-trigger">Log In</a>
 
-            </li>
+          <li class="nav-item">
+            <a href="login.php" class="btn btn-success js-scroll-trigger">Log In</a>
+
+          </li>
         </ul>
       </div>
     </div>
@@ -82,7 +67,22 @@ include('./api/db.php');
     </div>
   </header>
 
- 
+  <script>
+    (function() {
+      var div = document.createElement("div");
+      document.getElementsByTagName('body')[0].appendChild(div);
+      div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' src='https://webchat.botframework.com/embed/admissionlk-bot?s=1OUMRVAAM1Q._ppQD7RYgNLg1XcByl9io9lc46sHOfwvh01U5J_O-Qo'></iframe></div>";
+
+      document.querySelector('body').addEventListener('click', function(e) {
+        e.target.matches = e.target.matches || e.target.msMatchesSelector;
+        if (e.target.matches('#botTitleBar')) {
+          var botDiv = document.querySelector('#botDiv');
+          botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+        };
+      });
+    }());
+  </script>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
