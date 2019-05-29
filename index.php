@@ -67,7 +67,7 @@ include('./api/db.php');
     </div>
   </header>
 
-  <script>
+  <script type="text/javascript">
     (function() {
       var div = document.createElement("div");
       document.getElementsByTagName('body')[0].appendChild(div);
