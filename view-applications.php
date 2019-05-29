@@ -63,7 +63,7 @@ include('./api/db.php');
         </div>
 
 
-        <button class="btn btn-success">Interview Selected</button>
+        <button class="btn btn-success"  data-toggle="modal" data-target="#myModal">Interview Selected</button>
       </div>
 
       <div class="col-10">
