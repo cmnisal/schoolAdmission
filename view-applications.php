@@ -104,11 +104,51 @@ include('./api/db.php');
             </tr>
             <tr>
               <th scope="row">
-                <input type="checkbox" checked /> Kanthi Jayasuriya
+                <input type="checkbox" checked /> Lakindu Goonawardana
               </th>
               <td>21, Kottawa Rd, Kottawa</td>
               <td>Alumni/Siblings</td>
               <td>56%</td>
+              <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal">Interview</button></td>
+
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" checked /> Adhil Rasheed
+              </th>
+              <td>655/3, Elvitigala Mw, Col - 05</td>
+              <td>Proximity</td>
+              <td>72%</td>
+              <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal">Interview</button></td>
+
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" checked /> Shehan Fernando
+              </th>
+              <td>87A, 2nd Cross Street, Col - 01</td>
+              <td>Alumni/Siblings</td>
+              <td>56%</td>
+              <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal">Interview</button></td>
+
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" checked /> Tharusha Perera
+              </th>
+              <td>53, Maligakanda Rorad, Colombo 10</td>
+              <td>Alumni</td>
+              <td>86%</td>
+              <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal">Interview</button></td>
+
+            </tr>
+            <tr>
+              <th scope="row">
+                <input type="checkbox" checked /> Prasanna Silva
+              </th>
+              <td>#123/2A, Malabe Rd, Kaduwela</td>
+              <td>Siblings</td>
+              <td>66%</td>
               <td><button class="btn btn-success" data-toggle="modal" data-target="#myModal">Interview</button></td>
 
             </tr>
