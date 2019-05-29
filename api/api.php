@@ -197,7 +197,7 @@ if (isset($_GET['user']) && $_GET['pass'] != "") {
 		echo $json_response;
 	}
 
-	function loginResponse($order_id, $amount, $response_code, $response_desc)
+	function loginResponse($response_code, $response_desc)
 	{
 
 		$response['response_code'] = $response_code;
