@@ -62,7 +62,7 @@ if (isset($_GET['cat'])) {
 
       <div style="margin-bottom: 25px" class="input-group">
         <label style="background-color:#28a745; color:white;padding:10px;">Name with initials</label>
-        <input type="text" name="init_name" size="30" placeholder="Name with initials" style="margin-bottom:8px;" />
+        <input type="text" name="init_name" value = "Name" size="30" placeholder="Name with initials" style="margin-bottom:8px;" />
       </div>
 
       <div style="margin-bottom: 25px" class="input-group">
