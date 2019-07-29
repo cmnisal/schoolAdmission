@@ -47,7 +47,7 @@ include('./api/db.php');
 
                     <div class="card-body text-center">
                         <h3 class="card-title">
-                            <a href="application-home.php" style="text-decoration: none;color: white;">Create / Open Account</a>
+                            <a href="application-home.php" style="text-decoration: none;color: white;">Create / Open Application</a>
                         </h3>
                     </div>
                 </div>
